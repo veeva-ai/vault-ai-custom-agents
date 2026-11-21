@@ -1,0 +1,13 @@
+Field section__c (
+   label('Section'),
+   type('Object'),
+   active(true),
+   required(true),
+   list_column(false),
+   object('course_section__c'),
+   relationship_type('parent'),
+   relationship_outbound_name('section__cr'),
+   relationship_inbound_name('registrations__cr'),
+   relationship_inbound_label('Registrations'),
+   relationship_deletion('block')
+);

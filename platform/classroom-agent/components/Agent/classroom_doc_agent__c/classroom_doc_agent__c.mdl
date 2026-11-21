@@ -1,0 +1,19 @@
+RECREATE Agent classroom_doc_agent__c (
+   label('Classroom Document Agent'),
+   active(true),
+   agent_user('[agent]classroom_doc_agent__c'),
+   class('Agentclass.com.veeva.vault.system.agent.BaseDocumentAgent'),
+   description('Document-scoped agent for the Classroom document type. Answers questions about and summarizes the document the user is currently viewing.'),
+   document_type('Doctype.classroom__c'),
+   model_level('ADVANCED'),
+   object(),
+   object_type(),
+   objective(@objective.txt),
+   supplemental_objective(),
+   Agentaction(@Agentaction/answer_question__c.mdl),
+   Agentaction(@Agentaction/review_classroom_material__c.mdl),
+   Agentaction(@Agentaction/summarize__c.mdl),
+   Agentactiontool(@Agentactiontool/complete_workflow_task_review_classroom__c.mdl),
+   Agentactiontool(@Agentactiontool/annotate_document_review_classroom__c.mdl),
+   Agentcontext(@Agentcontext/classroom_doc_content__c.mdl)
+);

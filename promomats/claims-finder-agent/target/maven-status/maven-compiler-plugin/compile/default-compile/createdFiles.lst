@@ -1,0 +1,5 @@
+com/veeva/vault/custom/claims/ClaimText.class
+com/veeva/vault/custom/claims/ClaimsLibraryContextHandler.class
+com/veeva/vault/custom/claims/CreateClaimsToolHandler.class
+com/veeva/vault/custom/claims/ClaimsSchema.class
+com/veeva/vault/custom/claims/ClaimsSchema$RowHandler.class

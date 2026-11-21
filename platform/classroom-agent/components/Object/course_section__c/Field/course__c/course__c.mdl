@@ -1,0 +1,13 @@
+Field course__c (
+   label('Course'),
+   type('Object'),
+   active(true),
+   required(true),
+   list_column(false),
+   object('course__c'),
+   relationship_type('parent'),
+   relationship_outbound_name('course__cr'),
+   relationship_inbound_name('course_sections__cr'),
+   relationship_inbound_label('Course Sections'),
+   relationship_deletion('block')
+);

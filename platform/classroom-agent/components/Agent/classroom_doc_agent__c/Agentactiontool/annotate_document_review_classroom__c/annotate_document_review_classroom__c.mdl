@@ -1,0 +1,7 @@
+Agentactiontool annotate_document_review_classroom__c (
+   label(),
+   active(true),
+   action('Agentaction.review_classroom_material__c'),
+   agent('Agent.classroom_doc_agent__c'),
+   tool('Aitool.annotate_document__c')
+);

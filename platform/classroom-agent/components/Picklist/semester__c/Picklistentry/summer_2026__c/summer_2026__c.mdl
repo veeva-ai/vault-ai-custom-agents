@@ -1,0 +1,5 @@
+Picklistentry summer_2026__c (
+   value('Summer 2026'),
+   order(6),
+   active(true)
+);

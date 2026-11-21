@@ -1,0 +1,7 @@
+Field start_date__c (
+   label('Start Date'),
+   type('Date'),
+   active(true),
+   required(false),
+   list_column(false)
+);

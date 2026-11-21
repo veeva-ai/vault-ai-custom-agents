@@ -1,0 +1,11 @@
+Field course_brochure_unbound__c (
+   label('Course Brochure (unbound)'),
+   type('Number'),
+   active(true),
+   required(false),
+   list_column(false),
+   max_value(2147483647),
+   min_value(1),
+   scale(0),
+   related_document_reference_field('course_brochure__c')
+);

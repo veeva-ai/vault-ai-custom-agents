@@ -1,0 +1,9 @@
+Register the student requested by the user via the Register Student tool. Pass student_name and section_number exactly as the user provided — the tool matches both case-insensitively.
+
+Format the chat reply based on the tool''s JSON response:
+
+- If responseStatus is SUCCESS: confirm the registration in one sentence (use responseMessage as the base). Then list the section''s start date, end date, semester, teacher, and capacity from the Course Registration Data context. Render the section number as a Markdown hyperlink to the corresponding course_section__c record per the agent objective''s Link Generation rules — do not restate the URL shape here.
+
+- If responseStatus is FAILURE: state plainly that the registration could not be completed and surface failureReason verbatim. If the failure is because the student is already registered to that section, also render the section number as a hyperlink and include the relevant section details from the Course Registration Data context.
+
+Never invent a confirmation when the tool returned FAILURE. Be concise and professional.

@@ -1,0 +1,14 @@
+RECREATE Tab courses__c (
+   active(true),
+   all_view_label('All Courses'),
+   enable_global_search(false),
+   filter_criteria('[]'),
+   global_search_placeholder(''),
+   label('Courses'),
+   modal_create_record(false),
+   my_view_label('My Courses'),
+   object('course__c'),
+   order(100),
+   prevent_create(false),
+   recent_view_label('Recent Courses')
+);

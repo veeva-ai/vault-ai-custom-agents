@@ -1,0 +1,5 @@
+Picklistentry dropped__c (
+   value('Dropped'),
+   order(2),
+   active(true)
+);

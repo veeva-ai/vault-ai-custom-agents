@@ -1,0 +1,8 @@
+Field semester__c (
+   label('Semester'),
+   type('Picklist'),
+   active(true),
+   required(false),
+   list_column(false),
+   picklist('Picklist.semester__c')
+);

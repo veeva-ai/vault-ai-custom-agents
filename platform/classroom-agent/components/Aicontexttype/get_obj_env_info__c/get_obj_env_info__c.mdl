@@ -1,0 +1,6 @@
+RECREATE Aicontexttype get_obj_env_info__c (
+   label('Get Environment Info'),
+   active(true),
+   admin_configurable(true),
+   runtime_code('Aicontexttyperuntimecode.com.veeva.vault.custom.contexttype.GetObjEnvtContext')
+);

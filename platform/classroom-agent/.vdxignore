@@ -1,0 +1,4 @@
+# Vault CLI ignore rules (same syntax as .gitignore).
+# This sample only contains the Classroom components. `vault config push` makes
+# the target Vault match this workspace, so ALWAYS run `vault config push --dry-run`
+# first and check the DELETED lines before pushing for real.

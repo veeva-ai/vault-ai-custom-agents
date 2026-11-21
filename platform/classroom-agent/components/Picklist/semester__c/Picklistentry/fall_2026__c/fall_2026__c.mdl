@@ -1,0 +1,5 @@
+Picklistentry fall_2026__c (
+   value('Fall 2026'),
+   order(3),
+   active(true)
+);

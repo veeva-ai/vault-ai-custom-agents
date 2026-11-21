@@ -1,0 +1,8 @@
+Field department__c (
+   label('Department'),
+   type('Picklist'),
+   active(true),
+   required(false),
+   list_column(false),
+   picklist('Picklist.department__c')
+);

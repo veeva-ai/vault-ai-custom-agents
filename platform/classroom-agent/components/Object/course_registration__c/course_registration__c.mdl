@@ -1,0 +1,21 @@
+RECREATE Object course_registration__c (
+   label('Course Registration'),
+   label_plural('Registrations'),
+   active(true),
+   in_menu(true),
+   allow_attachments(false),
+   audit(true),
+   object_class('base'),
+   allow_types(false),
+   data_store('standard'),
+   Field(@Field/name__v.mdl),
+   Field(@Field/student__c.mdl),
+   Field(@Field/section__c.mdl),
+   Field(@Field/registration_status__c.mdl),
+   Field(@Field/registration_date__c.mdl),
+   Field(@Field/end_date__c.mdl),
+   Field(@Field/grade__c.mdl),
+   Field(@Field/student_comment__c.mdl),
+   Field(@Field/student_id__c.mdl),
+   Field(@Field/student_name__c.mdl)
+);

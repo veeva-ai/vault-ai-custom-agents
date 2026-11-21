@@ -1,0 +1,14 @@
+RECREATE Tab teachers__c (
+   active(true),
+   all_view_label('All Teachers'),
+   enable_global_search(false),
+   filter_criteria('[]'),
+   global_search_placeholder(''),
+   label('Teachers'),
+   modal_create_record(false),
+   my_view_label('My Teachers'),
+   object_type('Objecttype.person__sys.teacher__c'),
+   order(300),
+   prevent_create(false),
+   recent_view_label('Recent Teachers')
+);

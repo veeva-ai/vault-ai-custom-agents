@@ -1,0 +1,8 @@
+RECREATE Aitool find_students__c (
+   label('Find Students'),
+   active(true),
+   configuration(@configuration.xml),
+   description('Looks up student records by free-text search. Use ONLY when the user wants to FIND or IDENTIFY a student (partial name, misspelling, "who is …", "find students with …"). Performs a case-insensitive, tokenized FIND search restricted to the student''s full name (name__v), first name (first_name__sys), and last name (last_name__sys) — e.g. "jordan sm" matches "Jordan Smith". Returns each matching student''s record id (use for the hyperlink to the person record), display name (name__v), and email. DO NOT use this tool to list a known student''s course registrations — the all_registered_course_sections tool covers that.'),
+   input(@input.txt),
+   tool_type('Aitooltype.vql_query__sys')
+);

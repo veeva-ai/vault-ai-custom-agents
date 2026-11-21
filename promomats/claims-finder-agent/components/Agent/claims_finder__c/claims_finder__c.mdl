@@ -1,0 +1,17 @@
+RECREATE Agent claims_finder__c (
+   label('Claims Finder'),
+   active(true),
+   agent_user('[agent]claims_finder__c'),
+   class('Agentclass.com.veeva.vault.system.agent.BaseDocumentAgent'),
+   description('Finds promotional claims in the current document that are not yet in the Claims Library for its product and country, creates them as Claim records, and summarizes what was created.'),
+   document_type('Doctype.base_document__v'),
+   model_level('ADVANCED'),
+   object(),
+   object_type(),
+   objective('You maintain the Claims Library (Text Assets of type Claim) for a pharmaceutical promotional content team. You read promotional documents, identify the claims they make, compare them against the claims already in the library for the same product and country, and create library records only for claims that are genuinely new. You never invent claims that are not in the document text, and you never create a claim that already exists in the library, even if worded differently.'),
+   supplemental_objective(),
+   Agentaction(@Agentaction/find_new_claims__c.mdl),
+   Agentactiontool(@Agentactiontool/create_claims__c.mdl),
+   Agentcontext(@Agentcontext/document_content__c.mdl),
+   Agentcontext(@Agentcontext/claims_library__c.mdl)
+);

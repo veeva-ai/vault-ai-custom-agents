@@ -1,0 +1,5 @@
+object_type__v.api_name__v,match_text__sys,annotation_keyword_category__v,product__v.name__v,country__v.name__v
+claims__v,Zephyrol relieves seasonal allergy symptoms within 30 minutes.,efficacy__c,Zephyrol,United States
+claims__v,Zephyrol works by blocking histamine receptors.,mechanism_of_action__c,Zephyrol,United States
+claims__v,The most common side effects of Zephyrol are headache and mild drowsiness.,tolerability__c,Zephyrol,United States
+claims__v,Zephyrol should not be used by people with a known allergy to any of its ingredients.,safety__c,Zephyrol,United States

@@ -1,0 +1,4 @@
+RECREATE Doctype classroom__c (
+   label('Classroom'),
+   active(true)
+);

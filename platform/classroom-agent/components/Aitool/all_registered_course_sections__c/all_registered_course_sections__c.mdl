@@ -1,0 +1,8 @@
+RECREATE Aitool all_registered_course_sections__c (
+   label('All Registered Course Sections'),
+   active(true),
+   configuration(@configuration.xml),
+   description('Lists the course sections a student is registered in. Returns each section''s name, record ID and course name. The record ID can be used to build a link to the course section page.'),
+   input(@input.txt),
+   tool_type('Aitooltype.vql_query__sys')
+);

@@ -1,0 +1,1 @@
+{"type":"object","properties":{"query_string":{"type":"string","description":"Free-text search string matched against student name, first name, and last name. Tokenized and case-insensitive. Example: \"jordan sm\" matches \"Jordan Smith\"."}},"required":["query_string"]}

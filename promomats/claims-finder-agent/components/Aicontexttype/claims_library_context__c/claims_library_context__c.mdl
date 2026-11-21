@@ -1,0 +1,7 @@
+RECREATE Aicontexttype claims_library_context__c (
+   label('Claims Library Context'),
+   active(true),
+   admin_configurable(true),
+   description('The current document''s primary product and country, the valid Claim categories, and every Claim already in the Text Asset library for that product and country.'),
+   runtime_code('Aicontexttyperuntimecode.com.veeva.vault.custom.claims.ClaimsLibraryContextHandler')
+);

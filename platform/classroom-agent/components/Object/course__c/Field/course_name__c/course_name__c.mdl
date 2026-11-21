@@ -1,0 +1,8 @@
+Field course_name__c (
+   label('Course Name'),
+   type('String'),
+   active(true),
+   required(true),
+   list_column(false),
+   max_length(200)
+);

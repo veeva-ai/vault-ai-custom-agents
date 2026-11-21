@@ -1,0 +1,11 @@
+RECREATE Picklist department__c (
+   label('Department'),
+   active(true),
+   Picklistentry(@Picklistentry/english__c.mdl),
+   Picklistentry(@Picklistentry/biology__c.mdl),
+   Picklistentry(@Picklistentry/chemistry__c.mdl),
+   Picklistentry(@Picklistentry/history__c.mdl),
+   Picklistentry(@Picklistentry/math__c.mdl),
+   Picklistentry(@Picklistentry/physical_education__c.mdl),
+   Picklistentry(@Picklistentry/foreign_language__c.mdl)
+);

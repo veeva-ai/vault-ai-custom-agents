@@ -1,0 +1,12 @@
+Agentaction review_classroom_material__c (
+   label('Review Classroom Material'),
+   active(true),
+   api_access(true),
+   description('Reviews a Classroom syllabus against the required criteria and completes the workflow task as Approved or Rejected, with a comment.'),
+   hide_in_chat(),
+   instructions(@instructions.txt),
+   supplemental_instructions(),
+   support_chat(true),
+   tool_evaluation('AUTO'),
+   tool_evaluation_required_tool()
+);

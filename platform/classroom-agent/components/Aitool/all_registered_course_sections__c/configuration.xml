@@ -1,0 +1,1 @@
+<vault:configuration xmlns:vault="VeevaVault"> <vault:input type="string" name="vql_query__sys">SELECT id AS section_record_id, name__v AS section_name, course__cr.name__v AS course_name FROM course_section__c WHERE id IN (SELECT id FROM registrations__cr WHERE student__cr.name__v = $\{student__c\})</vault:input> </vault:configuration>

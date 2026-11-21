@@ -1,0 +1,12 @@
+Agentaction answer_question__c (
+   label('Answer a Question'),
+   active(true),
+   api_access(true),
+   description('Answer a free-form question that a teacher or student has about the Classroom document currently being viewed (course content, grading policy, requirements, dates, instructor, etc.).'),
+   hide_in_chat(),
+   instructions(@instructions.txt),
+   supplemental_instructions(),
+   support_chat(true),
+   tool_evaluation('AUTO'),
+   tool_evaluation_required_tool()
+);

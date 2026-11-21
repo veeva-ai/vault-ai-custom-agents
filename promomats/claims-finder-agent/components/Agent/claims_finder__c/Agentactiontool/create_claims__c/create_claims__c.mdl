@@ -1,0 +1,6 @@
+Agentactiontool create_claims__c (
+   active(true),
+   action('Agentaction.find_new_claims__c'),
+   agent('Agent.claims_finder__c'),
+   tool('Aitool.create_claims__c')
+);

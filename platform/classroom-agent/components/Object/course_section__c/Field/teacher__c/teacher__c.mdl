@@ -1,0 +1,14 @@
+Field teacher__c (
+   label('Teacher'),
+   type('Object'),
+   active(true),
+   required(false),
+   list_column(false),
+   object('person__sys'),
+   relationship_type('reference'),
+   relationship_outbound_name('teacher__cr'),
+   relationship_inbound_name('course_sections__cr'),
+   relationship_inbound_label('Course Sections'),
+   relationship_deletion('block'),
+   relationship_criteria([object_type__vr.api_name__v = 'teacher__c'])
+);

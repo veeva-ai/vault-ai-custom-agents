@@ -1,0 +1,8 @@
+RECREATE Aitool annotate_document__c (
+   label('Annotate Document'),
+   active(true),
+   configuration(),
+   description('Adds one or more sticky note annotations to a specific version of a Classroom document. Each entry in the annotations array becomes its own yellow note annotation on page 1 of the document. Call this tool to record a review verdict/comment, or any other note, directly on the document being reviewed.'),
+   input(@input.txt),
+   tool_type('Aitooltype.annotate_document__c')
+);

@@ -1,0 +1,11 @@
+Agentaction answer_a_question__c (
+   label('Answer a Question'),
+   active(true),
+   description('Answers open-ended questions about the specific course currently being viewed. Use this when the user asks about course general details.'),
+   hide_in_chat(),
+   instructions(@instructions.txt),
+   supplemental_instructions(),
+   support_chat(true),
+   tool_evaluation('AUTO'),
+   tool_evaluation_required_tool()
+);

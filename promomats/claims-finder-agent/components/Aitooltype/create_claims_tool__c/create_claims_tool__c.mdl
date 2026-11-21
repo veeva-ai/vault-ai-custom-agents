@@ -1,0 +1,7 @@
+RECREATE Aitooltype create_claims_tool__c (
+   label('Create Claims Tool'),
+   active(true),
+   admin_configurable(true),
+   description('Creates Claim records in the Text Asset library for the source document''s product and country. Input: source_document_id plus a list of claim texts.'),
+   runtime_code('Aitooltyperuntimecode.com.veeva.vault.custom.claims.CreateClaimsToolHandler')
+);

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.veeva.vault.samples</groupId>
+    <artifactId>classroom-agent</artifactId>
+    <version>1.0.0</version>
+
+    <name>Classroom Agent</name>
+    <description>Sample Vault AI custom agents for a Classroom application: a registrar agent that registers students and answers course questions, and a document agent that summarizes and reviews Classroom documents.</description>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Must match the Vault release you are developing against. Find yours in
+             Admin > Settings > General Settings. Example shown is for 26R2. -->
+        <vault.sdk.version>[26.2.0-release0, 26.2.0-release1000000]</vault.sdk.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>veevavault</id>
+            <url>https://repo.veevavault.com/maven</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </releases>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.veeva.vault.sdk</groupId>
+            <artifactId>vault-sdk</artifactId>
+            <version>${vault.sdk.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>javasdk</sourceDirectory>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+</project>

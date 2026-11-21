@@ -1,0 +1,1 @@
+{"type":"object","properties":{"student__c":{"type":"string","description":"Student Name"}},"required":["student__c"]}

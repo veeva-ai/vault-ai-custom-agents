@@ -1,0 +1,8 @@
+Agentcontext course_registration_data__c (
+   label('Course Registration Data'),
+   active(true),
+   always_include(true),
+   context_configuration(@context_configuration.xml),
+   context_type('Aicontexttype.object_data__sys'),
+   description()
+);

@@ -1,0 +1,14 @@
+Field name__v (
+   label('Name'),
+   type('String'),
+   active(true),
+   required(true),
+   unique(true),
+   max_length(128),
+   list_column(true),
+   system_managed_name(true),
+   sequential_naming(true),
+   start_number(1),
+   value_format('VV-{######}'),
+   no_copy(true)
+);

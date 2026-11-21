@@ -1,0 +1,12 @@
+Agentaction register_student__c (
+   label('Register Student'),
+   active(true),
+   api_access(true),
+   description('Registers a known student into an existing course section by creating a Course Registration record. Use this action when the user explicitly asks to register, enroll, or sign up a student in a section.'),
+   hide_in_chat(),
+   instructions(@instructions.txt),
+   supplemental_instructions(),
+   support_chat(true),
+   tool_evaluation('AUTO'),
+   tool_evaluation_required_tool()
+);

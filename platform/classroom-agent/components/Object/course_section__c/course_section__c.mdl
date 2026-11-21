@@ -1,0 +1,18 @@
+RECREATE Object course_section__c (
+   label('Course Section'),
+   label_plural('Course Sections'),
+   active(true),
+   in_menu(true),
+   allow_attachments(false),
+   audit(true),
+   object_class('base'),
+   allow_types(false),
+   data_store('standard'),
+   Field(@Field/course__c.mdl),
+   Field(@Field/teacher__c.mdl),
+   Field(@Field/semester__c.mdl),
+   Field(@Field/start_date__c.mdl),
+   Field(@Field/end_date__c.mdl),
+   Field(@Field/start_time__c.mdl),
+   Field(@Field/capacity__c.mdl)
+);

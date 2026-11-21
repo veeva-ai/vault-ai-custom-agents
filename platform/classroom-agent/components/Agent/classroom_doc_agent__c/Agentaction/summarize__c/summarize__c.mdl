@@ -1,0 +1,12 @@
+Agentaction summarize__c (
+   label('Summarize Classroom Document'),
+   active(true),
+   api_access(),
+   description('Produce a short, clean Markdown summary of the Classroom document currently being viewed. Format adapts to the document type — Syllabus vs Brochure.'),
+   hide_in_chat(),
+   instructions(@instructions.txt),
+   supplemental_instructions(),
+   support_chat(true),
+   tool_evaluation('AUTO'),
+   tool_evaluation_required_tool()
+);

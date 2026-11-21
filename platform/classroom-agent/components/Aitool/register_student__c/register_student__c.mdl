@@ -1,0 +1,8 @@
+RECREATE Aitool register_student__c (
+   label('Register Student'),
+   active(true),
+   configuration(),
+   description('Register a student into a course section by creating a Course Registration record. Provide the student''s full name and the target section number (e.g., BIO101_F26_AM). Both inputs are matched case-insensitively. The tool returns a JSON envelope with responseStatus (SUCCESS or FAILURE), a responseMessage, and on failure a failureReason explaining the rejection (e.g., student not found, section not found, or already registered).'),
+   input(@input.txt),
+   tool_type('Aitooltype.register_student__c')
+);

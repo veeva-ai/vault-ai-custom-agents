@@ -1,0 +1,5 @@
+Picklistentry winter_2026__c (
+   value('Winter 2026'),
+   order(5),
+   active(true)
+);

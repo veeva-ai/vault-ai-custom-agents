@@ -1,0 +1,7 @@
+Agentactiontool register_student_register_student__c (
+   label(),
+   active(true),
+   action('Agentaction.register_student__c'),
+   agent('Agent.classroom_agent__c'),
+   tool('Aitool.register_student__c')
+);

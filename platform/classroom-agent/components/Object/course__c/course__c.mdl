@@ -1,0 +1,20 @@
+RECREATE Object course__c (
+   label('Course'),
+   label_plural('Courses'),
+   active(true),
+   in_menu(true),
+   allow_attachments(false),
+   audit(true),
+   object_class('base'),
+   allow_types(false),
+   data_store('standard'),
+   Field(@Field/agent_result__c.mdl),
+   Field(@Field/course_name__c.mdl),
+   Field(@Field/credits__c.mdl),
+   Field(@Field/department__c.mdl),
+   Field(@Field/description__c.mdl),
+   Field(@Field/course_brochure__c.mdl),
+   Field(@Field/course_brochure_unbound__c.mdl),
+   Field(@Field/syllabus__c.mdl),
+   Field(@Field/syllabus_unbound__c.mdl)
+);

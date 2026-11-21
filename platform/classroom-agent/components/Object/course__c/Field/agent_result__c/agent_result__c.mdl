@@ -1,0 +1,8 @@
+Field agent_result__c (
+   label('Agent Result'),
+   type('LongText'),
+   active(true),
+   required(false),
+   list_column(false),
+   max_length(5000)
+);

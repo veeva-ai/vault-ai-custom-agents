@@ -1,0 +1,4 @@
+name__v,course_name__c,department__c,credits__c,description__c
+BIO101,Introductory Biology,biology__c,3,Introductory biology course covering fundamentals of life science.
+CHEM201,Organic Chemistry,chemistry__c,4,"Survey of organic chemistry structures, reactions, and mechanisms."
+HIST105,World History,history__c,3,Survey course covering major world historical events and movements.

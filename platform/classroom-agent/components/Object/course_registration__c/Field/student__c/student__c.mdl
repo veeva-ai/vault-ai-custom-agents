@@ -1,0 +1,14 @@
+Field student__c (
+   label('Student'),
+   type('Object'),
+   active(true),
+   required(true),
+   list_column(false),
+   object('person__sys'),
+   relationship_type('parent'),
+   relationship_outbound_name('student__cr'),
+   relationship_inbound_name('registrations__cr'),
+   relationship_inbound_label('Registrations'),
+   relationship_deletion('block'),
+   relationship_criteria([object_type__vr.api_name__v = 'student__c'])
+);

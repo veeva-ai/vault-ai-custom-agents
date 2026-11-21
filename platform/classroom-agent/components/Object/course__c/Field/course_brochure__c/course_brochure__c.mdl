@@ -1,0 +1,14 @@
+Field course_brochure__c (
+   label('Course Brochure'),
+   type('Object'),
+   active(true),
+   required(false),
+   list_column(false),
+   object('documents'),
+   relationship_type('reference'),
+   relationship_outbound_name('course_brochure__cr'),
+   relationship_inbound_name('brochure_courses__cr'),
+   relationship_inbound_label('Courses (Brochure)'),
+   relationship_deletion('block'),
+   document_version_reference('specific')
+);

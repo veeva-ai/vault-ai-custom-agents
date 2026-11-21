@@ -1,0 +1,10 @@
+Field grade__c (
+   label('Grade'),
+   type('Number'),
+   active(true),
+   required(false),
+   list_column(false),
+   max_value(100),
+   min_value(0),
+   scale(0)
+);

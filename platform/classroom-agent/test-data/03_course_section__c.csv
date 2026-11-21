@@ -1,0 +1,5 @@
+name__v,course__c.name__v,semester__c,start_date__c,end_date__c,start_time__c,capacity__c
+BIO101_F26_AM,BIO101,fall_2026__c,2026-09-01,2026-12-15,09:00:00,30
+BIO101_F26_PM,BIO101,fall_2026__c,2026-09-01,2026-12-15,14:00:00,25
+CHEM201_F26_AM,CHEM201,fall_2026__c,2026-09-01,2026-12-15,10:00:00,20
+HIST105_F26_AM,HIST105,fall_2026__c,2026-09-01,2026-12-15,11:00:00,35

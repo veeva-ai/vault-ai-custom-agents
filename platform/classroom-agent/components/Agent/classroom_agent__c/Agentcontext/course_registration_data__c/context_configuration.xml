@@ -1,0 +1,68 @@
+<vault:configuration xmlns:vault="VeevaVault"><vault:input name="objectFields" type="JsonObject">\{
+    "Courses": \{
+        "data_source": \{
+            "label": "Courses",
+            "description": "Information on Course",
+            "extended_description": "an extended description"
+        \},
+        "data": [
+            \{
+                "$\{modified_date__v;label\}": "$\{modified_date__v\}",
+                "$\{course_brochure__c;label\}": "$\{course_brochure__c\}",
+                "$\{course_brochure_unbound__c;label\}": "$\{course_brochure_unbound__c\}",
+                "$\{syllabus_unbound__c;label\}": "$\{syllabus_unbound__c\}",
+                "$\{syllabus__c;label\}": "$\{syllabus__c\}",
+                "$\{department__c;label\}": "$\{department__c\}",
+                "$\{credits__c;label\}": "$\{credits__c\}",
+                "$\{course_name__c;label\}": "$\{course_name__c\}",
+                "$\{name__v;label\}": "$\{name__v\}",
+                "$\{status__v;label\}": "$\{status__v\}",
+                "$\{description__c;label\}": "$\{description__c\}"
+            \}
+        ]
+    \},
+    "Course Sections": \{
+        "data_source": \{
+            "source": "$\{Rowset(course_sections__cr)\}",
+            "label": "Course Sections",
+            "description": "Course section information including teacher and section start and end dates",
+            "Student Registrations": \{
+                "data_source": \{
+                    "source": "$\{Rowset(registrations__cr where status__v = 'active__v' order by registration_date__c desc maxrows 100)\}",
+                    "label": "Student Registrations",
+                    "description": "Student registration date and status"
+                \}
+            \}
+        \},
+        "data": [
+            \{
+                "id": "$\{id\}",
+                "$\{semester__c;label\}": "$\{semester__c\}",
+                "$\{start_date__c;label\}": "$\{start_date__c\}",
+                "$\{course__c;label\}": "$\{course__c\}",
+                "$\{capacity__c;label\}": "$\{capacity__c\}",
+                "$\{teacher__c;label\}": "$\{teacher__c\}",
+                "$\{end_date__c;label\}": "$\{end_date__c\}",
+                "$\{start_time__c;label\}": "$\{start_time__c\}",
+                "$\{name__v;label\}": "$\{name__v\}",
+                "$\{status__v;label\}": "$\{status__v\}",
+                "Student Registrations": \{
+                    "data": [
+                        \{
+                            "id": "$\{id\}",
+                            "$\{student_name__c;label\}": "$\{student_name__c\}",
+                            "$\{student_id__c;label\}": "$\{student_id__c\}",
+                            "$\{registration_date__c;label\}": "$\{registration_date__c\}",
+                            "$\{registration_status__c;label\}": "$\{registration_status__c\}",
+                            "$\{end_date__c;label\}": "$\{end_date__c\}",
+                            "$\{grade__c;label\}": "$\{grade__c\}",
+                            "$\{section__c;label\}": "$\{section__c\}",
+                            "$\{student__c;label\}": "$\{student__c\}",
+                            "$\{student_comment__c;label\}": "$\{student_comment__c\}"
+                        \}
+                    ]
+                \}
+            \}
+        ]
+    \}
+\}</vault:input></vault:configuration>
