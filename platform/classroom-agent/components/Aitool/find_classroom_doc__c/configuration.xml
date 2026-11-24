@@ -1,0 +1,1 @@
+<vault:configuration xmlns:vault="VeevaVault"> <vault:input type="string" name="vql_query__sys">SELECT id, name__v, version_creation_date__v FROM documents WHERE TONAME(type__v) = 'classroom__c'</vault:input> </vault:configuration>

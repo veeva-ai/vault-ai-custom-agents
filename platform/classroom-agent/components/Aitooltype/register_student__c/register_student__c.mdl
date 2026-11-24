@@ -1,0 +1,6 @@
+RECREATE Aitooltype register_student__c (
+   label('Register Student'),
+   active(true),
+   admin_configurable(true),
+   runtime_code('Aitooltyperuntimecode.com.veeva.vault.custom.tooltype.RegisterStudentToolType')
+);

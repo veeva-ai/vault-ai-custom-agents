@@ -1,0 +1,12 @@
+Agentaction drop_student__c (
+   label('Drop Student'),
+   active(true),
+   api_access(true),
+   description('Drops a student from a course section by setting their Course Registration to Dropped. Use this when the user asks to drop, withdraw or unenroll a student from a section.'),
+   hide_in_chat(),
+   instructions(@instructions.txt),
+   supplemental_instructions(),
+   support_chat(true),
+   tool_evaluation('REQUIRED'),
+   tool_evaluation_required_tool('Aitool.drop_student__c')
+);

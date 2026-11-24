@@ -1,0 +1,7 @@
+Field end_date__c (
+   label('End Date'),
+   type('Date'),
+   active(true),
+   required(false),
+   list_column(false)
+);

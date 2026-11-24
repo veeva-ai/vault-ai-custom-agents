@@ -1,0 +1,8 @@
+Agentcontext classroom_doc_content__c (
+   label('Classroom Document Content'),
+   active(true),
+   always_include(true),
+   context_configuration(@context_configuration.xml),
+   context_type('Aicontexttype.document_data_content__sys'),
+   description('Extracted text of the current Classroom document with section structure preserved, plus the document id, name, and type.')
+);

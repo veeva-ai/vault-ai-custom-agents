@@ -1,0 +1,9 @@
+Field student_id__c (
+   label('Student ID'),
+   type('ID'),
+   active(true),
+   required(false),
+   list_column(false),
+   lookup_relationship_name('student__cr'),
+   lookup_source_field('id')
+);

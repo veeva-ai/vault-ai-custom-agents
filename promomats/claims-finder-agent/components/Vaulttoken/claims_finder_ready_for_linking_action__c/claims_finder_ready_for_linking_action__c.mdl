@@ -1,0 +1,7 @@
+RECREATE Vaulttoken claims_finder_ready_for_linking_action__c (
+   label('Claims Finder: PreLaunch Action Name'),
+   active(true),
+   clone_behavior('clear__sys'),
+   type('string__sys'),
+   value('claims_finder_ready_for_linking__c')
+);

@@ -1,0 +1,1 @@
+{"type":"object","properties":{"student_name":{"type":"string","description":"Full name of the student, case-insensitive (e.g. Jordan Smith)."}},"required":["student_name"]}

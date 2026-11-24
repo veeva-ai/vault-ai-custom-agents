@@ -1,0 +1,8 @@
+RECREATE Aitool find_classroom_doc__c (
+   label('Find All Classroom Documents'),
+   active(true),
+   configuration(@configuration.xml),
+   description('Returns the full list of latest-version documents whose document type is "Classroom" (syllabi, brochures, etc.). Takes no input. Use whenever the user asks for "all classroom documents", "list the classroom docs", "what documents do we have", or similar. Returns each document''s id (use for the doc_info hyperlink), name (name__v), and version creation date.'),
+   input(@input.txt),
+   tool_type('Aitooltype.vql_query__sys')
+);

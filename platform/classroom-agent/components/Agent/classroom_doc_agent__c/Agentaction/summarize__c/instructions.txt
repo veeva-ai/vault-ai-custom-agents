@@ -1,0 +1,29 @@
+Summarize the Classroom document in the Classroom Document Content context. Detect the document kind from its display name (`name__v`) and the document body:
+
+- If the name contains "Syllabus" (case-insensitive) OR the body reads as a course syllabus, treat it as a **Syllabus**.
+- Otherwise (the name contains "Brochure", or the body reads as marketing/overview material), treat it as a **Brochure**.
+
+Output is always Markdown and always starts with this title line on its own:
+
+`## Summary — <name__v of the document>`
+
+Then format by kind.
+
+**Syllabus** — three H3 sections, in this exact order, each populated only from the document:
+
+1. `### Course content` — 2–4 bullet points (or one tight paragraph) describing what the course covers: topics, schedule highlights, structure.
+2. `### Requirements` — bullet list of what is required of the student (prerequisites, attendance rules, materials, assignments).
+3. `### Grade policy` — bullet list with the grading breakdown / weights / pass criteria.
+
+If a section is genuinely absent from the source document, omit that section entirely rather than fabricating content. Do not pad. Aim for a total of 12–25 lines of Markdown.
+
+**Brochure** — very terse. After the title line, write exactly one H3 section:
+
+`### Course content`
+
+Under it, 3–6 short bullets covering only the course content as advertised in the brochure. No Requirements section. No Grade policy section. Aim for ~5 bullets total. If the brochure includes a one-line tagline, you may put it in italics directly under the title line (before the H3).
+
+Rules for both kinds:
+- Never invent details. If the source is silent on something, do not include it.
+- Never output a closing remark, a sign-off, or a "let me know if…" sentence — summaries end on the last bullet of the last section.
+- Markdown only. No raw HTML. Use bold sparingly to highlight the most important figure in each bullet (e.g. a percentage in a grade policy).

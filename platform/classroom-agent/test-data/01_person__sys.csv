@@ -1,0 +1,8 @@
+object_type__v.api_name__v,first_name__sys,last_name__sys,email__sys,language__sys.admin_key__sys,locale__sys.admin_key__sys,timezone__sys
+student__c,Jordan,Smith,jordan.smith@example.com,en,en_US,america_new_york__sys
+student__c,Taylor,Johnson,taylor.johnson@example.com,en,en_US,america_new_york__sys
+student__c,Morgan,Lee,morgan.lee@example.com,en,en_US,america_new_york__sys
+student__c,Casey,Brown,casey.brown@example.com,en,en_US,america_new_york__sys
+student__c,Alex,Martinez,alex.martinez@example.com,en,en_US,america_new_york__sys
+teacher__c,Jamie,Carter,jamie.carter@example.com,en,en_US,america_new_york__sys
+teacher__c,Riley,Thompson,riley.thompson@example.com,en,en_US,america_new_york__sys

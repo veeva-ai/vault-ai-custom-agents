@@ -1,0 +1,12 @@
+Agentaction answer_a_question__c (
+   label('Answer a Question'),
+   active(true),
+   api_access(true),
+   description('Answers questions about the course being viewed: its details, sections, students and documents, and the sections a student is registered in. Use this when the user asks a question, not when they ask to register or drop a student.'),
+   hide_in_chat(),
+   instructions(@instructions.txt),
+   supplemental_instructions(),
+   support_chat(true),
+   tool_evaluation('AUTO'),
+   tool_evaluation_required_tool()
+);

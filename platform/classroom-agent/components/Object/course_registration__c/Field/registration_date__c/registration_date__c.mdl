@@ -1,0 +1,8 @@
+Field registration_date__c (
+   label('Registration Date'),
+   type('Date'),
+   active(true),
+   required(false),
+   list_column(false),
+   default_value('Today()')
+);

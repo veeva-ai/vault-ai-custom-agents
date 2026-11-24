@@ -1,0 +1,3 @@
+ALTER Object person__sys (
+   allow_types(true)
+);

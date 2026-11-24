@@ -1,0 +1,5 @@
+Picklistentry chemistry__c (
+   value('Chemistry'),
+   order(2),
+   active(true)
+);

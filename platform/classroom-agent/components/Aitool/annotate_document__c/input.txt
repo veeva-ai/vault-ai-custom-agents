@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "document_version_id": {
+      "type": "string",
+      "description": "The document version to annotate, in the form <document_id>_<major_version>_<minor_version>, e.g. \"100_1_2\" for document id 100, major version 1, minor version 2."
+    },
+    "annotations": {
+      "type": "array",
+      "description": "One or more annotation texts to add to the document. One note annotation is created per entry.",
+      "items": {
+        "type": "string",
+        "description": "The text of a single note annotation to add to the document."
+      }
+    }
+  },
+  "required": ["document_version_id", "annotations"]
+}

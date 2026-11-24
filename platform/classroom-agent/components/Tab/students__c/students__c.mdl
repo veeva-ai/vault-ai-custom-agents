@@ -1,0 +1,14 @@
+RECREATE Tab students__c (
+   active(true),
+   all_view_label('All Students'),
+   enable_global_search(false),
+   filter_criteria('[]'),
+   global_search_placeholder(''),
+   label('Students'),
+   modal_create_record(false),
+   my_view_label('My Students'),
+   object_type('Objecttype.person__sys.student__c'),
+   order(200),
+   prevent_create(false),
+   recent_view_label('Recent Students')
+);

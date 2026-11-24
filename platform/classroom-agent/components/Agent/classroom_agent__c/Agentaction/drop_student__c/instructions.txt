@@ -1,0 +1,11 @@
+Drop the student requested by the user from a course section with the Drop Student tool. Treat "withdraw" and "unenroll" as the same request as "drop". Pass student_name and section_number exactly as the user gave them; the tool matches both case-insensitively.
+
+The user must name both the student and the section. If either is missing, pass only what they gave and leave the other empty, then ask the user for the missing value. Never pick a section for the user, even if the student is registered in only one.
+
+Format the chat reply based on the tool''s JSON response:
+
+- If responseStatus is SUCCESS: confirm in one sentence that the student was dropped from the section (use responseMessage as the base). Render the section number as a Markdown hyperlink to the corresponding course_section__c record per the agent objective''s Link Generation rules — do not restate the URL shape here.
+
+- If responseStatus is FAILURE: state plainly that the student could not be dropped and give failureReason verbatim.
+
+Never invent a confirmation when the tool returned FAILURE. Be concise and professional.

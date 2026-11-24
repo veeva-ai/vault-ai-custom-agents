@@ -1,0 +1,68 @@
+# Classroom Material Review
+
+## Context
+We are completing a **Classroom Material Review** task.
+
+The task has the following completion verdicts: **Approved** or **Rejected**.
+
+Review the full content of the document (body, headers, footers, and tables) against every criterion below. Judge only what is written in the document; do not assume or infer missing information.
+
+This review applies to syllabi only. If the document is not a syllabus (for example a brochure), do not evaluate the criteria. Reply that the Classroom Material Review applies to syllabi only and do not call any tool.
+
+## Review Criteria
+
+| # | Criterion | Requirement to be met |
+|---|-----------|-----------------------|
+| 1 | **Instructor Information** | Includes **all three**: instructor **Name**, **Email address**, and **Office Hours** (days/times or "by appointment" with a contact method). |
+| 2 | **Course Description** | Provides a **detailed** description of the course: its subject matter, scope, and main topics covered. A one-line title or course code alone is not sufficient. |
+| 3 | **Learning Objectives** | Lists the learning objectives or expected outcomes (what students will know or be able to do by the end of the course). |
+| 4 | **Grading Breakdown** | Shows how the final grade is calculated, with each graded component and its weight (percentage or points). Weights should total 100% (or the stated point total). |
+| 5 | **Course Policies** | Includes course policies, such as attendance, late work/make-up, academic integrity, and/or accommodations. |
+| 6 | **Disclaimer** | Contains a disclaimer stating that the syllabus content is **subject to change**. |
+
+## Verdict Rules
+
+### Approved
+Criteria for approval: **all six criteria (1–6) are met.**
+
+If approved, provide a short **Approval Comment** (1–2 sentences) confirming that all required sections are present.
+
+### Rejected
+Criteria for rejection: **one or more criteria (1–6) are missing or incomplete.** For example:
+- Instructor Name, Email, or Office Hours is missing.
+- The course description is missing or too brief to be considered detailed.
+- Learning objectives are missing.
+- The grading breakdown is missing or has no component weights.
+- Course policies are missing.
+- The "content subject to change" disclaimer is missing.
+
+If rejected, provide a short **Rejection Comment** that lists each failed criterion and what is missing (for example: *"Rejected: missing instructor office hours; no ''subject to change'' disclaimer."*).
+
+## Steps
+1. Read the entire Syllabus document.
+2. Evaluate each criterion (1–6) and record whether it is **Met** or **Not Met**.
+3. Decide the verdict:
+   - All criteria met → **Approved**, with an Approval Comment.
+   - Any criterion not met → **Rejected**, with a Rejection Comment.
+4. If the **Annotate Document** tool is available, call it once to add annotations to the document:
+   - Build `document_version_id` as `<Id>_<Major Version Number>_<Minor Version Number>` using the values from the Classroom Document Content context (e.g. Id `112`, Major Version Number `0`, Minor Version Number `1` → `"112_0_1"`).
+   - If the verdict is **Rejected**, the `annotations` array must contain exactly **one entry per failed (Not Met) criterion** — a separate annotation for each violation, never combined into a single entry. Format each entry as: `"Violation: <Criterion Name> - <what is missing or incomplete>"`. Do not add an entry for a criterion that is Met.
+   - If the verdict is **Approved** (there are no violations), pass a single-element `annotations` array containing: `"Verdict: Approved\nComment: <the Approval Comment>"`.
+5. Complete the task:
+   - If this action is running for a workflow task assigned to you, use the **Complete Workflow Task** tool to complete it with the verdict and comment.
+   - If it is running from Vault AI Chat, with no workflow task, do not call **Complete Workflow Task**. Return the output in the format below.
+
+## Output Format (when running from Vault AI Chat)
+
+```
+Verdict: <Approved | Rejected>
+Comment: <Approval Comment or Rejection Comment>
+
+Criteria Results:
+1. Instructor Information: <Met | Not Met> – <short note>
+2. Course Description: <Met | Not Met> – <short note>
+3. Learning Objectives: <Met | Not Met> – <short note>
+4. Grading Breakdown: <Met | Not Met> – <short note>
+5. Course Policies: <Met | Not Met> – <short note>
+6. Disclaimer: <Met | Not Met> – <short note>
+```

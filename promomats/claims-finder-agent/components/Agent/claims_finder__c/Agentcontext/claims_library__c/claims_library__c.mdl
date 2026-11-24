@@ -1,0 +1,7 @@
+Agentcontext claims_library__c (
+   label('Claims Library'),
+   active(true),
+   always_include(true),
+   context_type('Aicontexttype.claims_library_context__c'),
+   description('The document''s product and country, the valid claim categories, and the existing claims for that product and country')
+);

@@ -1,0 +1,7 @@
+Agentactiontool all_registered_course_sections_answer_a__c (
+   label(),
+   active(true),
+   action('Agentaction.answer_a_question__c'),
+   agent('Agent.classroom_agent__c'),
+   tool('Aitool.all_registered_course_sections__c')
+);

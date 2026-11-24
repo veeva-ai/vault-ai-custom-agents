@@ -1,0 +1,85 @@
+name__v,abbreviation__c,expiration_period_months__c,reapproval_expiration_period_x_month__c,language__v,status__v
+Australia,AU,12,3,,active__v
+Germany,DE,12,3,,active__v
+Global,GL,12,3,,active__v
+Canada,CA,12,3,,active__v
+China,CN,12,3,,active__v
+Sweden,SE,12,3,,active__v
+Switzerland,CH,12,3,,active__v
+United Kingdom,UK,12,3,,active__v
+United States,US,12,3,,active__v
+Italy,IT,12,3,,active__v
+Austria,AT,12,3,,active__v
+Netherlands,NL,12,3,,active__v
+Spain,ES,12,3,,active__v
+France,FR,12,3,,active__v
+Japan,JP,12,3,,active__v
+Belgium,BE,12,3,,active__v
+Ireland,IE,12,3,,active__v
+Norway,NO,24,3,,active__v
+Denmark,DK,24,3,,active__v
+Finland,FI,24,3,,active__v
+Bulgaria,BG,12,3,,active__v
+Croatia,HR,12,3,,active__v
+Cyprus,CY,12,3,,active__v
+Czech Republic,CZ,12,3,,active__v
+Estonia,EE,12,3,,active__v
+Greece,GR,12,3,,active__v
+Hungary,HU,12,3,,active__v
+Iceland,IS,12,3,,active__v
+Israel,IL,12,3,,active__v
+Latvia,LV,12,3,,active__v
+Liechtenstein,LI,12,3,,active__v
+Lithuania,LT,12,3,,active__v
+Luxembourg,LU,12,3,,active__v
+Malta,MT,12,3,,active__v
+Poland,PL,12,3,,active__v
+Portugal,PT,12,3,,active__v
+Qatar,QA,12,3,,active__v
+Romania,RO,12,3,,active__v
+Singapore,SG,12,3,,active__v
+Slovakia,SK,12,3,,active__v
+Slovenia,SI,12,3,,active__v
+Andorra,AD,12,3,,active__v
+South Korea,KR,12,3,,active__v
+Taiwan,TW,12,3,,active__v
+Colombia,CO,12,3,,active__v
+Saudi Arabia,SA,12,3,,active__v
+UAE,AE,12,3,,active__v
+Brunei,BN,12,3,,active__v
+Philippines,PH,12,3,,active__v
+Botswana,BW,12,3,,active__v
+Indonesia,ID,12,3,,active__v
+Thailand,TH,12,3,,active__v
+San Marino,SM,12,3,,active__v
+Malaysia,MY,24,3,,active__v
+Bhutan,BT,12,3,,active__v
+Vietnam,VN,12,3,,active__v
+Argentina,AR,12,3,,active__v
+Serbia,RS,12,3,,active__v
+Kuwait,KW,12,3,,active__v
+Brazil,BR,12,3,,active__v
+African Union,AC,12,3,,active__v
+Turkmenistan,TM,12,3,,active__v
+Chile,CL,12,3,,active__v
+Paraguay,PY,12,3,,active__v
+Peru,PE,24,3,,active__v
+Seychelles,SS,3,12,,active__v
+New Zealand,NZ,24,6,,active__v
+Panama,PA,24,12,es,active__v
+Hong Kong,HK,24,12,,active__v
+Pan American Health Org,PAH,12,2,"en_US,es",active__v
+Ecuador,EC,12,1,es,active__v
+Antigua and Barbuda,AG,12,3,,active__v
+Barbados,BB,12,3,,active__v
+Bahamas,BS,12,3,,active__v
+Belize,BZ,12,3,,active__v
+Costa Rica,CR,12,3,,active__v
+Dominican Republic,DO,12,3,,active__v
+Guatemala,GT,12,3,,active__v
+Guyana,GY,12,3,,active__v
+Jamaica,JM,12,3,,active__v
+Saint Kitts and Nevis,KN,12,3,,active__v
+Trinidad and Tobago,TT,12,3,,active__v
+Uruguay,UY,12,3,,active__v
+Mexico,MX,24,2,es_MX,active__v

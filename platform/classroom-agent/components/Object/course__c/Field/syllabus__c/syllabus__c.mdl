@@ -1,0 +1,14 @@
+Field syllabus__c (
+   label('Syllabus'),
+   type('Object'),
+   active(true),
+   required(false),
+   list_column(false),
+   object('documents'),
+   relationship_type('reference'),
+   relationship_outbound_name('syllabus__cr'),
+   relationship_inbound_name('courses__cr'),
+   relationship_inbound_label('Courses (Syllabus)'),
+   relationship_deletion('block'),
+   document_version_reference('latest')
+);

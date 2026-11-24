@@ -1,0 +1,5 @@
+name__v,course__c.name__v,semester__c,start_date__c,end_date__c,start_time__c,end_time__c,capacity__c
+BIO101_F27_AM,BIO101,fall_2027__c,2027-09-01,2027-12-15,09:00:00,10:15:00,30
+BIO101_F27_PM,BIO101,fall_2027__c,2027-09-01,2027-12-15,14:00:00,15:15:00,25
+CHEM201_F27_AM,CHEM201,fall_2027__c,2027-09-01,2027-12-15,10:00:00,11:15:00,20
+HIST105_F27_AM,HIST105,fall_2027__c,2027-09-01,2027-12-15,11:00:00,12:15:00,35

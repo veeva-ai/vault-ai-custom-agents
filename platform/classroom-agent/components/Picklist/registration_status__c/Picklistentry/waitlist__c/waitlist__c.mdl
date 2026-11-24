@@ -1,0 +1,5 @@
+Picklistentry waitlist__c (
+   value('Waitlist'),
+   order(0),
+   active(true)
+);

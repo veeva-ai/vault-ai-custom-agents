@@ -1,0 +1,5 @@
+Picklistentry spring_2027__c (
+   value('Spring 2027'),
+   order(8),
+   active(true)
+);

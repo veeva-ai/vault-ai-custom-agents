@@ -1,0 +1,15 @@
+RECREATE Picklist semester__c (
+   label('Semester'),
+   active(true),
+   Picklistentry(@Picklistentry/spring_2025__c.mdl),
+   Picklistentry(@Picklistentry/summer_2025__c.mdl),
+   Picklistentry(@Picklistentry/fall_2025__c.mdl),
+   Picklistentry(@Picklistentry/winter_2026__c.mdl),
+   Picklistentry(@Picklistentry/spring_2026__c.mdl),
+   Picklistentry(@Picklistentry/summer_2026__c.mdl),
+   Picklistentry(@Picklistentry/fall_2026__c.mdl),
+   Picklistentry(@Picklistentry/winter_2027__c.mdl),
+   Picklistentry(@Picklistentry/spring_2027__c.mdl),
+   Picklistentry(@Picklistentry/summer_2027__c.mdl),
+   Picklistentry(@Picklistentry/fall_2027__c.mdl)
+);

@@ -1,0 +1,7 @@
+Agentactiontool drop_student_drop_student__c (
+   label(),
+   active(true),
+   action('Agentaction.drop_student__c'),
+   agent('Agent.classroom_agent__c'),
+   tool('Aitool.drop_student__c')
+);

@@ -1,0 +1,11 @@
+Field syllabus_unbound__c (
+   label('Syllabus (unbound)'),
+   type('Number'),
+   active(true),
+   required(false),
+   list_column(false),
+   max_value(2147483647),
+   min_value(1),
+   scale(0),
+   related_document_reference_field('syllabus__c')
+);

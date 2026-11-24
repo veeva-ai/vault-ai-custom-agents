@@ -1,0 +1,12 @@
+Agentaction find_new_claims__c (
+   label('Find New Claims'),
+   active(true),
+   api_access(true),
+   hide_in_chat(),
+   description('Reads the current document, finds the promotional claims it makes, checks each against the Claims Library for the document''s product and country, creates Claim records for the new ones, and summarizes them.'),
+   instructions(@instructions.txt),
+   supplemental_instructions(),
+   support_chat(true),
+   tool_evaluation('REQUIRED'),
+   tool_evaluation_required_tool('Aitool.create_claims__c')
+);

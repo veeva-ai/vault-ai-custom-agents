@@ -1,0 +1,6 @@
+RECREATE Aitooltype drop_student__c (
+   label('Drop Student'),
+   active(true),
+   admin_configurable(true),
+   runtime_code('Aitooltyperuntimecode.com.veeva.vault.custom.tooltype.DropStudentToolType')
+);

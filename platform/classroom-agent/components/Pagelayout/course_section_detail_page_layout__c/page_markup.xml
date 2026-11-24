@@ -1,0 +1,25 @@
+<vault:page xmlns:vault="VeevaVault" controller="Object.course_section__c">
+    <vault:section title="Details" name="details__c">
+        <vault:detailform type="Two-Columns">
+            <vault:field reference="name__v" />
+            <vault:field reference="status__v" />
+            <vault:field reference="created_date__v" />
+            <vault:field reference="modified_date__v" />
+            <vault:field reference="capacity__c" />
+            <vault:field reference="course__c" />
+            <vault:field reference="start_date__c" />
+            <vault:field reference="start_time__c" />
+            <vault:field reference="end_time__c" />
+            <vault:field reference="end_date__c" />
+            <vault:field reference="semester__c" />
+            <vault:field reference="teacher__c" />
+        </vault:detailform>
+    </vault:section>
+    <vault:section title="Registrations" name="registrations__c">
+        <vault:relatedObject relationship="registrations__cr" preventRecordCreate="false" modalCreateRecord="false" displayAsSimple="false">
+            <vault:field reference="name__v" width="200px" />
+            <vault:field reference="student__cr.name__v" width="200px" />
+            <vault:field reference="student__cr.email__sys" width="200px" />
+        </vault:relatedObject>
+    </vault:section>
+</vault:page>

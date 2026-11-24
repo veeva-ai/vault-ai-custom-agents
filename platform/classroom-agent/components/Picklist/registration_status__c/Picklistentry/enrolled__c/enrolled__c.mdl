@@ -1,0 +1,5 @@
+Picklistentry enrolled__c (
+   value('Enrolled'),
+   order(1),
+   active(true)
+);

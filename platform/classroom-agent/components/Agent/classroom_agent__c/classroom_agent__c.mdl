@@ -1,0 +1,23 @@
+RECREATE Agent classroom_agent__c (
+   label('Classroom Agent'),
+   active(true),
+   agent_user('[agent]classroom_agent__c'),
+   class('Agentclass.com.veeva.vault.system.agent.BaseObjectAgent'),
+   description('Answers questions about a course and its students, sections and documents, and registers students into course sections or drops them from sections.'),
+   document_type(),
+   model_level('ADVANCED'),
+   object('Object.course__c'),
+   object_type(),
+   objective(@objective.txt),
+   supplemental_objective(),
+   Agentaction(@Agentaction/answer_a_question__c.mdl),
+   Agentactiontool(@Agentactiontool/all_registered_course_sections_answer_a__c.mdl),
+   Agentactiontool(@Agentactiontool/find_students_answer_a_question__c.mdl),
+   Agentactiontool(@Agentactiontool/find_classroom_doc_answer_a_question__c.mdl),
+   Agentaction(@Agentaction/register_student__c.mdl),
+   Agentactiontool(@Agentactiontool/register_student_register_student__c.mdl),
+   Agentaction(@Agentaction/drop_student__c.mdl),
+   Agentactiontool(@Agentactiontool/drop_student_drop_student__c.mdl),
+   Agentcontext(@Agentcontext/course_registration_data__c.mdl),
+   Agentcontext(@Agentcontext/get_obj_env_info__c.mdl)
+);

@@ -1,0 +1,7 @@
+RECREATE Vaulttoken claims_finder_api_version__c (
+   label('Claims Finder: REST API Version'),
+   active(true),
+   clone_behavior('clear__sys'),
+   type('string__sys'),
+   value('v26.2')
+);

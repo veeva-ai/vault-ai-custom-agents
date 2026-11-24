@@ -1,0 +1,10 @@
+Field credits__c (
+   label('Credits'),
+   type('Number'),
+   active(true),
+   required(true),
+   list_column(false),
+   max_value(6),
+   min_value(1),
+   scale(0)
+);

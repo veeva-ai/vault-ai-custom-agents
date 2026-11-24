@@ -1,0 +1,9 @@
+RECREATE Picklist registration_status__c (
+   label('Registration Status'),
+   active(true),
+   Picklistentry(@Picklistentry/waitlist__c.mdl),
+   Picklistentry(@Picklistentry/enrolled__c.mdl),
+   Picklistentry(@Picklistentry/dropped__c.mdl),
+   Picklistentry(@Picklistentry/cancelled__c.mdl),
+   Picklistentry(@Picklistentry/complete__c.mdl)
+);

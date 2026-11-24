@@ -1,0 +1,6 @@
+RECREATE Aitooltype annotate_document__c (
+   label('Annotate Document'),
+   active(true),
+   admin_configurable(true),
+   runtime_code('Aitooltyperuntimecode.com.veeva.vault.custom.tooltype.AnnotateDocumentToolType')
+);

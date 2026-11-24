@@ -1,0 +1,8 @@
+RECREATE Aitool all_registered_course_sections__c (
+   label('All Registered Course Sections'),
+   active(true),
+   configuration(@configuration.xml),
+   description('Lists the course sections a student is currently registered in (Enrolled or Waitlist), matching the student''s full name case-insensitively. Returns each section''s record ID, section number, course name, semester, start time and end time. Use the record ID to link to the course section.'),
+   input(@input.txt),
+   tool_type('Aitooltype.vql_query__sys')
+);

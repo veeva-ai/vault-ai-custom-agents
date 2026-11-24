@@ -1,0 +1,9 @@
+Field registration_status__c (
+   label('Registration Status'),
+   type('Picklist'),
+   active(true),
+   required(false),
+   list_column(false),
+   picklist('Picklist.registration_status__c'),
+   default_value('{enrolled__c}')
+);

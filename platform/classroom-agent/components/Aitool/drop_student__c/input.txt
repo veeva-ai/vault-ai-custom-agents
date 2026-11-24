@@ -1,0 +1,1 @@
+{"type":"object","properties":{"student_name":{"type":"string","description":"Full name of the student to drop, case-insensitive (e.g. Jordan Smith)."},"section_number":{"type":"string","description":"Section number of the course section to drop the student from, case-insensitive (e.g. BIO101_F27_AM)."}},"required":["student_name","section_number"]}

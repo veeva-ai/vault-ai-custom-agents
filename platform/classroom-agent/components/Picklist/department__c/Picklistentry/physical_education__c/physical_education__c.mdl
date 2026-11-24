@@ -1,0 +1,5 @@
+Picklistentry physical_education__c (
+   value('Physical Education'),
+   order(5),
+   active(true)
+);

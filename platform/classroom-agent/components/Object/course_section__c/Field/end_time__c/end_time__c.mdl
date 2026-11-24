@@ -1,0 +1,10 @@
+Field end_time__c (
+   label('End Time'),
+   type('String'),
+   subtype('Time'),
+   active(true),
+   required(false),
+   list_column(false),
+   max_length(8),
+   format_mask('TimeFormat()')
+);

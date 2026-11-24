@@ -1,0 +1,12 @@
+<vault:configuration xmlns:vault="VeevaVault"><vault:input name="documentContentTypes" type="JsonArray">["TEXT_EXTRACT","PAGE_IMAGES"]</vault:input><vault:input name="useStructuredText" type="Boolean">true</vault:input><vault:input name="documentFields" type="JsonObject">\{
+    "Top-Level": \{
+        "$\{id;label\}": "$\{id\}",
+        "$\{name__v;label\}": "$\{name__v\}",
+        "$\{type__v;label\}": "$\{type__v\}"
+    \},
+    "Document Version Identifiers": \{
+        "$\{id;label\}": "$\{id\}",
+        "$\{major_version_number__v;label\}": "$\{major_version_number__v\}",
+        "$\{minor_version_number__v;label\}": "$\{minor_version_number__v\}"
+    \}
+\}</vault:input><vault:input name="documentVersion" type="String">SELECTED</vault:input></vault:configuration>

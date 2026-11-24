@@ -1,0 +1,8 @@
+Agentcontext get_obj_env_info__c (
+   label('Get Environment Info'),
+   active(true),
+   always_include(true),
+   context_configuration(),
+   context_type('Aicontexttype.get_obj_env_info__c'),
+   description()
+);

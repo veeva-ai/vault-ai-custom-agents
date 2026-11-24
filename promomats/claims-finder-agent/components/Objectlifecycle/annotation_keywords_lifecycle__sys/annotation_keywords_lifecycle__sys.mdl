@@ -1,0 +1,9 @@
+ALTER Objectlifecycle annotation_keywords_lifecycle__sys (
+   ADD Objectlifecyclestateuseraction draft_state__sys.claims_finder_ready_for_linking__c(
+      label('Move to PreLaunch (Claims Finder)'),
+      rule({<?xml version="1.0" encoding="UTF-8"?>
+<rule><actions><action type="LIFECYCLE_STATE_CHANGE_ACTION" transitionState="Objectlifecyclestate.prelaunch_state__v" /></actions></rule>
+}),
+      order(1010)
+   )
+);

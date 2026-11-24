@@ -1,0 +1,7 @@
+Agentactiontool find_students_answer_a_question__c (
+   label(),
+   active(true),
+   action('Agentaction.answer_a_question__c'),
+   agent('Agent.classroom_agent__c'),
+   tool('Aitool.find_students__c')
+);

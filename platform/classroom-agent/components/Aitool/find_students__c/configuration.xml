@@ -1,0 +1,1 @@
+<vault:configuration xmlns:vault="VeevaVault"> <vault:input type="string" name="vql_query__sys">SELECT id, name__v FROM person__sys FIND ($\{query_string\} SCOPE name__v, first_name__sys, last_name__sys) WHERE object_type__vr.api_name__v = 'student__c' AND status__v = 'active__v'</vault:input> </vault:configuration>

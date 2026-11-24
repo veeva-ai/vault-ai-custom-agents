@@ -1,0 +1,8 @@
+RECREATE Aitool create_claims__c (
+   label('Create Claims'),
+   active(true),
+   configuration(),
+   description('Creates Claim records in the Text Asset library for the source document''s product and country. Call it exactly once, after comparing every extracted claim against the existing claims, with source_document_id copied from the [doc:<id>] marker and the list of NEW claims (an empty list is allowed when nothing is new). Returns one CREATED or FAILED line per claim, including the new record name.'),
+   input(),
+   tool_type('Aitooltype.create_claims_tool__c')
+);

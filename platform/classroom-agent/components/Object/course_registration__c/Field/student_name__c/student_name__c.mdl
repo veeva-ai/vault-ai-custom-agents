@@ -1,0 +1,10 @@
+Field student_name__c (
+   label('Student Name'),
+   type('String'),
+   active(true),
+   required(false),
+   list_column(false),
+   max_length(128),
+   lookup_relationship_name('student__cr'),
+   lookup_source_field('name__v')
+);

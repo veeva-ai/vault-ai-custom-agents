@@ -1,0 +1,12 @@
+Agentaction answer_question__c (
+   label('Answer a Question'),
+   active(true),
+   api_access(true),
+   description('Answers a question about the Classroom document being viewed, such as its course content, grading policy, requirements, dates or instructor. Use this when the user asks a question about the document.'),
+   hide_in_chat(),
+   instructions(@instructions.txt),
+   supplemental_instructions(),
+   support_chat(true),
+   tool_evaluation('AUTO'),
+   tool_evaluation_required_tool()
+);

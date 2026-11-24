@@ -1,0 +1,14 @@
+RECREATE Tab course_materials__c (
+   active(true),
+   all_view_label('All Course Materials'),
+   doctype('classroom__c'),
+   enable_global_search(false),
+   filter_criteria('[]'),
+   global_search_placeholder(''),
+   label('Course Materials'),
+   modal_create_record(false),
+   my_view_label('My Course Materials'),
+   order(400),
+   prevent_create(false),
+   recent_view_label('Recent Course Materials')
+);
